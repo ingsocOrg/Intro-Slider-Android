@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_slide2">
+
+    <ImageView
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp100"
+        android:src="@drawable/ic_heart"
+        android:alpha="0.2"
+        android:rotation="30"/>
+    <ImageView
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp70"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_heart"
+        android:alpha="0.2"
+        android:rotation="-30"/>
+    <ImageView
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp100"
+        android:src="@drawable/ic_heart"
+        android:alpha="0.2"
+        android:rotation="30"/>
+    <ImageView
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="140dp"
+        android:src="@drawable/ic_heart"
+        android:alpha="0.2"
+        android:rotation="-20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/looks_amazing"
+            android:textSize="30sp"
+            android:alpha="0.8"/>
+        <ImageView
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp30"
+            android:src="@drawable/ic_heart"
+            android:alpha="0.2"
+            android:rotation="20"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:alpha="0.8"
+            android:src="@drawable/ic_hand_gesture"
+            />
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:layout_marginTop="@dimen/dp80"
+           android:text="@string/swipe_right_to_favourite"/>
+        </LinearLayout>
+
+
+
+</RelativeLayout>

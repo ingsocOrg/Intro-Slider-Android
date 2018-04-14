@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_slide1">
+
+    <ImageView
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:src="@drawable/mobileme_logo_of_black_cloud"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginStart="@dimen/dp50"
+        android:alpha="0.6"/>
+    <ImageView
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp25"
+        android:scaleType="fitXY"
+        android:src="@drawable/mobileme_logo_of_black_cloud"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp150"
+        android:layout_marginEnd="@dimen/dp50"
+        android:alpha="0.6"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp25"
+        android:scaleType="fitXY"
+        android:src="@drawable/plane_taking_off"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp60"
+        android:layout_marginEnd="@dimen/dp70"
+        android:alpha="0.4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp120"
+            android:src="@drawable/ic_research"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_to"
+                android:textColor="@color/grey_text"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vista"
+                android:textSize="15sp"
+                android:textColor="@color/vista_blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp150">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/grey_text"
+            android:text="@string/find_your_new_home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_text"
+                android:textStyle="bold"
+                android:text="@string/in_a_swipe"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp350"
+        android:scaleType="fitXY"
+        android:alpha="0.06"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_city"/>
+
+
+</RelativeLayout>

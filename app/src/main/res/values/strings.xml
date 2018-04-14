@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IntroSlider</string>
+    <string name="welcome">&lt;font color=#cc0029&gt;First Color&lt;/font&gt; &lt;font color=#ffcc00&gt;Second Color&lt;/font&gt;</string>
+    <string name="find_your_new_home">Find your new Home</string>
+    <string name="in_a_swipe">In a Swipe!</string>
+    <string name="swipe_right_to_favourite">Swipe <b>Right</b> to favourite</string>
+    <string name="got_it">GOT IT</string>
+    <string name="home">Home</string>
+    <string name="vista">Vista</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="looks_amazing">Looks Amazing!</string>
+    <string name="chat_with_an_agent">Chat with an Agent</string>
+    <string name="get_in_touch_with_our_agent_and_resolve_your_queries">Get in touch with our agent and resolve your Queries</string>
+</resources>
