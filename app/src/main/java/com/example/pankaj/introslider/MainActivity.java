@@ -1,6 +1,7 @@
 package com.example.pankaj.introslider;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -22,17 +23,23 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private int[] layouts;
     private MyViewPagerAdapter myViewPagerAdapter;
     private TextView mIndicatorView[];
-
+    private SharedPrefs sharedPrefs;
     private LinearLayout mIndicatorLayout;
     private Button gotIt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPrefs=new SharedPrefs(this);
+        if(!sharedPrefs.checkFirstTime())
+        {
+            launchHomePage();
 
+        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         mIndicatorLayout = (LinearLayout) findViewById(R.id.indicator_layout);
@@ -50,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         gotIt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+            launchHomePage();
             }
         });
     }
@@ -141,4 +148,13 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
             container.removeView(view);
         }
     }
+
+    private void launchHomePage()
+    {
+        sharedPrefs.saveFirstTime(false);
+        Intent i=new Intent(MainActivity.this,HomePage.class);
+        startActivity(i);
+        finish();
+    }
+
 }
